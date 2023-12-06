@@ -10,10 +10,10 @@ class Appbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       backgroundColor: AppColors.backgroundColor,
+      expandedHeight: 280,
       elevation: 4,
       pinned: true,
       floating: false,
-      expandedHeight: 280,
       actions: [
         IconButton(
           onPressed: () {}, 
@@ -24,6 +24,19 @@ class Appbar extends StatelessWidget {
           onPressed: () {}, 
           icon: const Image(image: AssetImage('assets/cross.png'))
       ),
+
+      bottom: TabBar(
+        controller: tabController,
+        labelColor: AppColors.textPrimary,
+        unselectedLabelColor: AppColors.textSecondary,
+        indicatorColor: AppColors.selectedTab,
+        indicatorSize: TabBarIndicatorSize.tab,
+        tabs: const <Widget>[
+          Tab(child: Text('Профиль'),),
+          Tab(child: Text('Настройки'),),
+        ],
+      ),
+
       flexibleSpace: FlexibleSpaceBar(
         collapseMode: CollapseMode.pin,
         background: Center(
@@ -32,7 +45,7 @@ class Appbar extends StatelessWidget {
             children: <Widget>[
               const SizedBox(height: 36,),
               Image.asset('assets/user_photo.png'),
-              const SizedBox(height: 36),
+              const SizedBox(height: 12),
               Text('Екатерина', textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 10,)
             ]),
