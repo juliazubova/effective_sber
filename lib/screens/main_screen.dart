@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sber/theme/colors.dart';
 import 'package:sber/widgets/appbar.dart';
+import 'package:sber/widgets/service_carousel.dart';
+import 'package:sber/data/sample_data.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -38,7 +40,10 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
             children: [
               ListView(
                 physics: const NeverScrollableScrollPhysics(),
-                // children: [], 
+                children: [
+                  const SizedBox(height: 30),
+                  ServiceCarousel(services: sampleServices,),
+                ], 
               ) // ... 
             ],
           )

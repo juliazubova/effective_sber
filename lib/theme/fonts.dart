@@ -8,4 +8,16 @@ abstract class AppFonts {
     fontSize: 24,
     color: AppColors.textPrimary
   );
+  static const titleMedium = TextStyle(
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w700,
+    fontSize: 20,
+    color: AppColors.textPrimary
+  );
+  static final bodySmall = TextStyle(
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    color: AppColors.textSecondary,
+  );
 }

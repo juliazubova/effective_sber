@@ -6,7 +6,8 @@ class AppTheme {
   static ThemeData themeData = ThemeData(
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
-      titleMedium: AppFonts.titleLarge
-    )
+      titleMedium: AppFonts.titleMedium,
+      bodySmall: AppFonts.bodySmall
+    ),
   );
 }
