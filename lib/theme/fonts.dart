@@ -22,4 +22,11 @@ abstract class AppFonts {
     letterSpacing: -0.4,
     color: AppColors.textSecondary,
   );
+  static const titleVerySmall = TextStyle(
+    fontFamily: 'SF_Pro_Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    color: AppColors.textPrimary,
+    letterSpacing: -0.4,
+  );
 }
