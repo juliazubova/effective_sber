@@ -50,7 +50,8 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
                   const SizedBox(height: 40),
                   Interests(interests: sampleIntersts)
                 ], 
-              ) // ... 
+              ), 
+              const SizedBox.shrink()
             ],
           )
           )

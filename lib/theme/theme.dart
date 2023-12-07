@@ -7,7 +7,9 @@ class AppTheme {
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
-      bodySmall: AppFonts.bodySmall
+      bodySmall: AppFonts.bodySmall,
+      bodyMedium: AppFonts.bodyMedium,
+      bodyLarge: AppFonts.bodyLarge
     ),
     appBarTheme: const AppBarTheme(
       elevation: 4,

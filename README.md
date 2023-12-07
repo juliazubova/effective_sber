@@ -1,16 +1,18 @@
-# sber
+# Лабораторная работа 1 по Flutter
 
-A new Flutter project.
+<u>*Задание*</u>: разработать Flutter приложение по следующему [макету](https://www.figma.com/file/T53qEeDxWunzfRMuqRGvz9?type=design%27&node-id=1:177). 
 
-## Getting Started
+Версия Flutter: 3.16.1
 
-This project is a starting point for a Flutter application.
+Версия Dart: 3.2.1
 
-A few resources to get you started if this is your first Flutter project:
+Чтобы запустить проект, необходимо клонировать репозиторий командой ниже
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```git
+git clone https://github.com/juliazubova/effective_android.git effective_android  --branch develop
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<u>*Результат*</u>: 
+
+|<img src="application_screens/screen1.jpg">|<img src="application_screens/screen2.jpg">|
+|:-:|:-:|

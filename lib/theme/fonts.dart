@@ -15,6 +15,21 @@ abstract class AppFonts {
     fontSize: 20,
     color: AppColors.textPrimary
   );
+  static final bodyLarge = TextStyle(
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    color: AppColors.textSecondary,
+    letterSpacing: -0.4
+  );
+
+  static final bodyMedium = TextStyle(
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    color: AppColors.textSecondary,
+    letterSpacing: -0.4
+  );
   static final bodySmall = TextStyle(
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w500,
