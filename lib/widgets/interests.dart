@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sber/theme/strings.dart';
+import 'package:sber/widgets/interest_element.dart';
 import 'package:sber/widgets/subheader.dart';
 
 class Interests extends StatefulWidget {
   const Interests({super.key, required this.interests});
 
-  // final Chapter chapter;
   final Map<String, bool> interests;
 
   @override
@@ -14,16 +15,34 @@ class Interests extends StatefulWidget {
 class _Interests extends State<Interests> {
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start, 
         children: [
-          SubHeader(
-            title: 'Интересы', description: 'Мы подбираем истории и предложения по темам, которые вам нравятся'
+          const SubHeader(
+            title: Strings.interestTitle, description: Strings.interestDescription
             ),
-          SizedBox(height: 8),
-          
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            children: List<Widget>.generate(
+              widget.interests.length,
+              (int index) => Builder(
+                builder: (BuildContext context) {
+                  return InterestElement(
+                    name: Text(widget.interests.keys.elementAt(index)),
+                    isSelected: widget.interests.values.elementAt(index),
+                    onSelected: (bool selected) {
+                      setState(() {
+                        widget.interests[widget.interests.keys.elementAt(index)] = selected;
+                      });
+                    }
+                  );
+                }
+              )
+            ),
+          )
         ]
       ),
     );
