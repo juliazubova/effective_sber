@@ -19,3 +19,13 @@ final List<Tariff> sampleTariffs = [
   Tariff(name: "Переводы без комиссии", description: "Показать остаток в этом месяце", icon: "assets/percent.png"),
   Tariff(name: "Информация о тарифах и лимитах", description: "", icon: "assets/arrows_forward_back.png"),
 ];
+
+final Map<String, bool> sampleIntersts = {
+  'Еда': false,
+  'Саморазвитие': false,
+  'Технологии': false,
+  'Дом': false,
+  'Досуг': false,
+  'Забота о себе': false,
+  'Наука': false
+};

@@ -6,6 +6,7 @@ abstract class AppFonts {
     fontFamily: 'SF Pro Display',
     fontWeight: FontWeight.w700,
     fontSize: 24,
+    letterSpacing: -0.7,
     color: AppColors.textPrimary
   );
   static const titleMedium = TextStyle(
@@ -18,6 +19,7 @@ abstract class AppFonts {
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w500,
     fontSize: 14,
+    letterSpacing: -0.4,
     color: AppColors.textSecondary,
   );
 }
