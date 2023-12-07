@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sber/theme/colors.dart';
 import 'package:sber/widgets/appbar.dart';
 import 'package:sber/widgets/service_carousel.dart';
+import 'package:sber/widgets/tariffs.dart';
 import 'package:sber/data/sample_data.dart';
 
 class MainScreen extends StatefulWidget {
@@ -43,6 +44,8 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
                 children: [
                   const SizedBox(height: 30),
                   ServiceCarousel(services: sampleServices,),
+                  const SizedBox(height: 20),
+                  Tariffs(tariffs: sampleTariffs)
                 ], 
               ) // ... 
             ],

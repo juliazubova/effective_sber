@@ -1,4 +1,5 @@
 import 'package:sber/model/service.dart';
+import 'package:sber/model/tariff.dart';
 
 final List<Service> sampleServices = [
   Service(
@@ -11,4 +12,10 @@ final List<Service> sampleServices = [
       name: 'Переводы',
       info: 'Автопродление 21 августа',
       price: '199 ₽ в месяц'),
+];
+
+final List<Tariff> sampleTariffs = [
+  Tariff(name: "Изменить суточный лимит", description: "На платежи и переводы", icon: "assets/speedometer.png"),
+  Tariff(name: "Переводы без комиссии", description: "Показать остаток в этом месяце", icon: "assets/percent.png"),
+  Tariff(name: "Информация о тарифах и лимитах", description: "", icon: "assets/arrows_forward_back.png"),
 ];

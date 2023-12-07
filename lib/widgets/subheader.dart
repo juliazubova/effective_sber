@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ServiceHeader extends StatelessWidget {
+class SubHeader extends StatelessWidget {
   final String title;
   final String description;
 
-  const ServiceHeader({super.key, required this.title, required this.description});
+  const SubHeader({super.key, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
