@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'subheader.dart';
 import 'service_card.dart';
-import 'package:sber/theme/strings.dart';
 import 'package:sber/model/service.dart';
 
 class ServiceCarousel extends StatelessWidget {
@@ -14,11 +12,6 @@ class ServiceCarousel extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(padding: EdgeInsets.symmetric(horizontal: 16),
-        child: SubHeader(
-          title: Strings.titleYoursServices,
-          description: Strings.descriptionYoursServices)
-        ),
         const SizedBox(height: 20),
         SizedBox(
           width: double.infinity,

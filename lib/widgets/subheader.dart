@@ -8,20 +8,23 @@ class SubHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const Padding(
-          padding: EdgeInsets.only(top: 8),
-        ),
-        Text(
-          description, 
-          style: Theme.of(context).textTheme.bodySmall),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16), 
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const Padding(
+            padding: EdgeInsets.only(top: 8),
+          ),
+          Text(
+            description, 
+            style: Theme.of(context).textTheme.bodySmall),
+        ],
+      )
     );
   }
 }

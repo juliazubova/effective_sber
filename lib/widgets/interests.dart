@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sber/theme/strings.dart';
 import 'package:sber/widgets/interest_element.dart';
-import 'package:sber/widgets/subheader.dart';
 
 class Interests extends StatefulWidget {
   const Interests({super.key, required this.interests});
@@ -20,9 +18,6 @@ class _Interests extends State<Interests> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start, 
         children: [
-          const SubHeader(
-            title: Strings.interestTitle, description: Strings.interestDescription
-            ),
           const SizedBox(height: 8),
           Wrap(
             spacing: 8,

@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:sber/theme/colors.dart';
 import 'package:sber/widgets/appbar.dart';
 import 'package:sber/widgets/service_carousel.dart';
+import 'package:sber/widgets/subheader.dart';
 import 'package:sber/widgets/tariffs.dart';
 import 'package:sber/widgets/interests.dart';
+import 'package:sber/theme/strings.dart';
 import 'package:sber/data/sample_data.dart';
 
 class MainScreen extends StatefulWidget {
@@ -44,10 +46,13 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
                   const SizedBox(height: 30),
-                  ServiceCarousel(services: sampleServices,),
+                  const SubHeader(title: Strings.titleYoursServices, description: Strings.descriptionYoursServices),
+                  ServiceCarousel(services: sampleServices),
                   const SizedBox(height: 20),
+                  const SubHeader(title: Strings.tariffTitle, description: Strings.tariffDescription),
                   Tariffs(tariffs: sampleTariffs),
                   const SizedBox(height: 40),
+                  const SubHeader(title: Strings.interestTitle, description: Strings.interestDescription),
                   Interests(interests: sampleIntersts)
                 ], 
               ), 
