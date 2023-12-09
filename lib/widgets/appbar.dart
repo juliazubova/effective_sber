@@ -10,7 +10,7 @@ class Appbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       backgroundColor: AppColors.backgroundColor,
-      expandedHeight: 280,
+      expandedHeight: 280, 
       elevation: 4,
       pinned: true,
       floating: false,
@@ -44,7 +44,20 @@ class Appbar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               const SizedBox(height: 36,),
-              Image.asset('assets/user_photo.png'),
+              Container(
+                height: 110,
+                width: 110,
+                decoration: ShapeDecoration(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(38)),
+                  shadows: const [BoxShadow(
+                    blurRadius: 24, 
+                    color: AppColors.shadow, 
+                    offset: Offset(0, 16),
+                    spreadRadius: -16
+                  )]
+                ),
+                child: Image.asset('assets/user_photo.png'),
+              ),
               const SizedBox(height: 12),
               Text('Екатерина', textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 10,)
