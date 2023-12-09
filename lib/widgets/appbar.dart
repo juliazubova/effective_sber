@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sber/theme/colors.dart';
+import 'package:sber/theme/strings.dart';
 
 class Appbar extends StatelessWidget {
-  const Appbar({super.key, required this.tabController});
+  const Appbar({super.key, required this.tabController, required this.username});
 
   final TabController tabController;
+  final String username;
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +34,8 @@ class Appbar extends StatelessWidget {
         indicatorColor: AppColors.selectedTab,
         indicatorSize: TabBarIndicatorSize.tab,
         tabs: const <Widget>[
-          Tab(child: Text('Профиль'),),
-          Tab(child: Text('Настройки'),),
+          Tab(child: Text(Strings.profile),),
+          Tab(child: Text(Strings.settings),),
         ],
       ),
 
@@ -59,7 +61,7 @@ class Appbar extends StatelessWidget {
                 child: Image.asset('assets/user_photo.png'),
               ),
               const SizedBox(height: 12),
-              Text('Екатерина', textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleLarge),
+              Text(username, textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 10,)
             ]),
         )

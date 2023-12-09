@@ -1,4 +1,9 @@
 abstract class Strings {
+  static const String username = "Екатерина";
+
+  static const String profile = "Профиль";
+  static const String settings = "Настройки";
+
   static const String titleYoursServices = "У вас подключено";
   static const String descriptionYoursServices = "Подписки, автоплатежи и сервисы на которые вы подписались";
 

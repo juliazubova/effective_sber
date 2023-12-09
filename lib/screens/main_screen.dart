@@ -37,7 +37,7 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
       body: SafeArea(
         child: NestedScrollView(
           headerSliverBuilder: (context, value) {
-            return [Appbar(tabController: _tabController)]; 
+            return [Appbar(tabController: _tabController, username: Strings.username)]; 
           },
           body: TabBarView(
             controller: _tabController,

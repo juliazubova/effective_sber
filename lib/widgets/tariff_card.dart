@@ -36,7 +36,6 @@ class TariffCard extends StatelessWidget {
                 )
               ),
               const Padding(padding: EdgeInsets.only(left: 16)),
-              // Image.asset(Images.arrow)
             ],
           )
         ]
