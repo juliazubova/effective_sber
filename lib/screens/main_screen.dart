@@ -47,11 +47,13 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
                 children: [
                   const SizedBox(height: 30),
                   const SubHeader(title: Strings.titleYoursServices, description: Strings.descriptionYoursServices),
-                  ServiceCarousel(services: sampleServices),
                   const SizedBox(height: 20),
+                  ServiceCarousel(services: sampleServices),
+                  const SizedBox(height: 46),
                   const SubHeader(title: Strings.tariffTitle, description: Strings.tariffDescription),
+                  const SizedBox(height: 12),
                   Tariffs(tariffs: sampleTariffs),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 46),
                   const SubHeader(title: Strings.interestTitle, description: Strings.interestDescription),
                   Interests(interests: sampleIntersts)
                 ], 

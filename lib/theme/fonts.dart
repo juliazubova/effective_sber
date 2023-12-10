@@ -16,6 +16,13 @@ abstract class AppFonts {
     color: AppColors.textPrimary,
     letterSpacing: -0.7
   );
+  static const titleSmall = TextStyle(
+    fontFamily: 'SF Pro Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    color: AppColors.textPrimary,
+    letterSpacing: -0.4
+  );
   static final bodyLarge = TextStyle(
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w500,
@@ -35,7 +42,7 @@ abstract class AppFonts {
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w500,
     fontSize: 14,
-    letterSpacing: -0.4,
+    letterSpacing: -0.41,
     color: AppColors.textSecondary,
   );
   static const titleVerySmall = TextStyle(

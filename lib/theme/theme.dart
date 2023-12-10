@@ -7,6 +7,7 @@ class AppTheme {
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
+      titleSmall: AppFonts.titleSmall,
       bodySmall: AppFonts.bodySmall,
       bodyMedium: AppFonts.bodyMedium,
       bodyLarge: AppFonts.bodyLarge

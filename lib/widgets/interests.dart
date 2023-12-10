@@ -21,6 +21,7 @@ class _Interests extends State<Interests> {
           const SizedBox(height: 8),
           Wrap(
             spacing: 8,
+            runSpacing: 8,
             children: List<Widget>.generate(
               widget.interests.length,
               (int index) => Builder(

@@ -45,7 +45,7 @@ class Appbar extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              const SizedBox(height: 36,),
+              const SizedBox(height: 30),
               Container(
                 height: 110,
                 width: 110,
@@ -60,9 +60,9 @@ class Appbar extends StatelessWidget {
                 ),
                 child: Image.asset('assets/user_photo.png'),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 36),
               Text(username, textAlign: TextAlign.center, style: Theme.of(context).textTheme.titleLarge),
-              const SizedBox(height: 10,)
+              const SizedBox(height: 14)
             ]),
         )
       ),
