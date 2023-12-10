@@ -28,9 +28,9 @@ class ServiceCard extends StatelessWidget {
                 ],
               ),
               Expanded(child: Container()),
-              Text(service.price,
-                  style: Theme.of(context).textTheme.titleMedium),
               Text(service.info,
+                  style: Theme.of(context).textTheme.titleMedium),
+              Text(service.price,
                   style: Theme.of(context).textTheme.bodySmall)
             ],
           ),

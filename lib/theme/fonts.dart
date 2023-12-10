@@ -13,7 +13,8 @@ abstract class AppFonts {
     fontFamily: 'SF Pro Text',
     fontWeight: FontWeight.w700,
     fontSize: 20,
-    color: AppColors.textPrimary
+    color: AppColors.textPrimary,
+    letterSpacing: -0.7
   );
   static final bodyLarge = TextStyle(
     fontFamily: 'SF Pro Text',

@@ -19,12 +19,12 @@ class Appbar extends StatelessWidget {
       actions: [
         IconButton(
           onPressed: () {}, 
-          icon: const Image(image: AssetImage('assets/arrow_right_square.png'))
+          icon: const Image(image: AssetImage('assets/arrow_right_square.png'), width: 24, height: 24)
         )
       ],
       leading: IconButton(
           onPressed: () {}, 
-          icon: const Image(image: AssetImage('assets/cross.png'))
+          icon: const Image(image: AssetImage('assets/cross.png'), width: 24, height: 24)
       ),
 
       bottom: TabBar(
