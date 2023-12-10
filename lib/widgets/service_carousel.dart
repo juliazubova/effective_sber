@@ -18,6 +18,7 @@ class ServiceCarousel extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16),
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
+                clipBehavior: Clip.none,
                 itemCount: services.length,
                 itemBuilder: (ctx, index) {
                   return ServiceCard(service: services[index]);
