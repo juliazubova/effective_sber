@@ -23,13 +23,13 @@ class ServiceCard extends StatelessWidget {
                   const SizedBox(width: 13),
                   Text(
                     service.name,
-                    style: Theme.of(context).textTheme.titleMedium
+                    style: Theme.of(context).textTheme.titleSmall
                   )
                 ],
               ),
               const Expanded(child: SizedBox()),
               Text(service.info,
-                  style: Theme.of(context).textTheme.titleMedium),
+                  style: Theme.of(context).textTheme.titleSmall),
               Text(service.price,
                   style: Theme.of(context).textTheme.bodySmall)
             ],

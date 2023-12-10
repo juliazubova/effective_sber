@@ -34,8 +34,8 @@ class Appbar extends StatelessWidget {
         indicatorColor: AppColors.selectedTab,
         indicatorSize: TabBarIndicatorSize.tab,
         tabs: const <Widget>[
-          Tab(child: Text(Strings.profile),),
-          Tab(child: Text(Strings.settings),),
+          Tab(child: Text(Strings.profile)),
+          Tab(child: Text(Strings.settings)), 
         ],
       ),
 
