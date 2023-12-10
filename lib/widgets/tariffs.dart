@@ -15,12 +15,20 @@ class Tariffs extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 12),
+          // ListView.separated( 
+          //   separatorBuilder: (context, int index) => const Divider(), 
+          //   itemCount: tariffs.length,
+          //   itemBuilder: (BuildContext context, int index) {
+          //     return TariffCard(tariff: tariffs[index]);
+          //   }
+          // ),
           InkWell(
             onTap: () {},
             borderRadius: BorderRadius.circular(12),
             child: TariffCard(tariff: tariffs[0]),
           ),
-          for (var (index, item) in tariffs.indexed)
+
+          for (var (index, item) in tariffs.indexed) 
             if (index != 0) ...[
               Divider(
                 height: 10,
