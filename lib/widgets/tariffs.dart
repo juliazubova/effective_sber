@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sber/theme/colors.dart';
 import 'tariff_card.dart';
 import 'package:sber/model/tariff.dart';
 
@@ -14,26 +13,17 @@ class Tariffs extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // const SizedBox(height: 12),
-          InkWell(
-            onTap: () {},
-            borderRadius: BorderRadius.circular(12),
-            child: TariffCard(tariff: tariffs[0]),
+          ListView.separated(
+            shrinkWrap: true,
+            separatorBuilder: (context, int index) => const Divider(
+              height: 10,
+              indent: 50,
+            ), 
+            itemCount: tariffs.length,
+            itemBuilder: (BuildContext context, int index) {
+              return TariffCard(tariff: tariffs[index]);
+            }
           ),
-
-          for (var (index, item) in tariffs.indexed) 
-            if (index != 0) ...[
-              Divider(
-                height: 10,
-                indent: 50,
-                color: AppColors.divider,
-              ),
-              InkWell(
-                onTap: () {},
-                borderRadius: BorderRadius.circular(12),
-                child: TariffCard(tariff: item),
-              ),
-            ]
         ],
       )
     );
